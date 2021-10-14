@@ -8,22 +8,8 @@ class_of_students = [student1_details, student2_details, "module  title", [2, 3,
 group_of_students = student1_details + student2_details  #creates 1 newlist with contents of previous two
        # [20, 'Michael Brennan', 77.5, 33, 'Mairead Gallagher', 65]
 
-
-'''Print list examples'''
-
-print("{}".format(ages[1]))
-print("{0} \t\t{1} \t{2}".format(student1_details[0], student1_details[1], student1_details[2]))
-print("{}".format(student1_details))
-print("{}".format(class_of_students[0][1]))
-
-
-ages[1]=33 # assign the value 33 to index position 1
-group_of_students=class_of_students[0:2]
-
-
-
-'''Is item in list'''
-
-
-
-
+grades=[1,2,3]
+nu_grades=[grades]*2 #note the square brackets around the list name
+print("{}".format(nu_grades))
+nu_grades[0][0]=6
+print("Repeated list after change {}".format(nu_grades)) #note that the 6 appears in both elements!
